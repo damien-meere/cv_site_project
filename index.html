@@ -45,10 +45,69 @@
             </div>
         </div>
     </header>
-    
+
     <!--Content Section of the page-->
     <section class="container-fluid">
-        <div class="row row-table">
+        <div class="row">
+            <!--contariner divided into 4&8 so -->
+            <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <!--full with on all screen sizes-->
+                        <h3 class="section-heading uppercase">Personal Info</h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Damien Meere
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Address:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            19 Abbey Avenue Corbally Limerick Ireland V94D2EH
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone Number:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            +353871234567
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Damien.Meere@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
             <!--create a column (because we have to have a column as a direct child of a row) of size 8, which is two-thirds the width of the screen-->
             <!--don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width.-->
             <!--The row-table class specifies the use of a table whereas section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.-->
@@ -58,10 +117,55 @@
                         <h3 class="section-heading uppercase">About Me</h3>
                     </div>
                 </div>
+                <div class="row">
+                    <!--When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 
+                        so that we get the content centered and have a one column margin down the left side.
+                        We're going to switch that offset off for tablets and larger because on the tablet, 
+                        we want it to appear in three columns of content.-->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">What do I do?</h4>
+                                <p>
+                                    I am a Full-stack developer. I completed a PhD in 2012, specialising in technology enhanced education and computer networking. I have a wide variety of technical experience that I can apply to any project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">How do i do it?</h4>
+                                <p>
+                                    I know that the aesthetics of efecive design combined with applicaton speed, security, and reliability combine to create a great user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Why Hire Me?</h4>
+                                <p>
+                                    I can work quickly and effectively to get applications and services built. I'm an excellent communicator who thrives in collaborative environments, but I'm also very a very proactive self-starter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!--Footer of the Page-->
     <footer class="container-fluid">
         <div id="footer-details" class="row">
