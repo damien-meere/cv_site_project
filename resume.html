@@ -46,8 +46,126 @@
         </div>
     </header>
 
-    <section>
+    <section class="container-fluid">
+        <div class="row">
+            <!--contariner divided into 4&8 so -->
+            <div class="col-md-4 bg-color-work-history section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <!--full with on all screen sizes-->
+                        <h3 class="history-heading uppercase">Educational/Work History</h3>
+                    </div>
+                </div>
+                <div class="history-items">
+                    <div class="timeline-item" data-dates="09/2001 - 04/2005">
+                        <h4>University of Limerick</h4>
+                        <p>BSc. IT & Telecommunications</p>
+                    </div>
+                    <div class="timeline-item" data-dates="10/2005 - 09/2012">
+                        <h4>Telecommunications Research Centre, University of Limerick</h4>
+                        <p>Doctoral Researcher/ Teaching Assistant</p>
+                        <p>PhD. - Technology Enhanced Education</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2013 - 04/2015">
+                        <h4>Optical Fibre Sensors Research Centre, University of Limerick</h4>
+                        <p>Postdoctoral Researcher</p>
+                    </div>
+                    <div class="timeline-item" data-dates="04/2015 - 06/2019">
+                        <h4>BT Ireland</h4>
+                        <p>Technical Training Lead</p>
+                    </div>
+                </div>
+            </div>
 
+
+            <!--create a column (because we have to have a column as a direct child of a row) of size 8, which is two-thirds the width of the screen-->
+            <!--don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width.-->
+            <!--The row-table class specifies the use of a table whereas section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.-->
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 
+                        so that we get the content centered and have a one column margin down the left side.
+                        We're going to switch that offset off for tablets and larger because on the tablet, 
+                        we want it to appear in three columns of content.-->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">FrontEnd</h4>
+                                <p>
+                                    I am a Full-stack developer. I completed a PhD in 2012, specialising in technology enhanced education and computer networking. I have a wide variety of technical experience that I can apply to any project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 ">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">BackEnd</h4>
+                                <p>
+                                    I know that the aesthetics of efecive design combined with applicaton speed, security, and reliability combine to create a great user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Creating progress bars in MySkills section to illustrate progress on various skills-->
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress">
+                            <!--aria valuenow sets the value on the progress bar-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuamin="0" aria-valuamax="100" style="width:90%;">
+                                <!--Screen Readers Only-->
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type"> HTML / HTML5 </span>
+                        </div>
+                        <div class="progress">
+                            <!--aria valuenow sets the value on the progress bar-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="60" aria-valuamin="0" aria-valuamax="100" style="width:60%;">
+                                <!--Screen Readers Only-->
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                            <span class="progress-type"> CSS / CSS3 </span>
+                        </div>
+                        <div class="progress">
+                            <!--aria valuenow sets the value on the progress bar-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuamin="0" aria-valuamax="100" style="width:75%;">
+                                <!--Screen Readers Only-->
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type"> Java </span>
+                        </div>
+                        <div class="progress">
+                            <!--aria valuenow sets the value on the progress bar-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="25" aria-valuamin="0" aria-valuamax="100" style="width:25%;">
+                                <!--Screen Readers Only-->
+                                <span class="sr-only">25% Complete</span>
+                            </div>
+                            <span class="progress-type"> Python </span>
+                        </div>
+                        <div class="progress">
+                            <!--aria valuenow sets the value on the progress bar-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="70" aria-valuamin="0" aria-valuamax="100" style="width:70%;">
+                                <!--Screen Readers Only-->
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                            <span class="progress-type"> SQL </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="container-fluid">
@@ -111,10 +229,6 @@
                 </ul>
             </div>
         </div>
-
     </footer>
-
-
 </body>
-
 </html>
